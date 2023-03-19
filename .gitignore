@@ -1,41 +1,96 @@
-# Compiled Lua sources
-luac.out
-
-# luarocks build files
-*.src.rock
-*.zip
-*.tar.gz
-
-# Object files
-*.o
-*.os
-*.ko
-*.obj
-*.elf
-
-# Precompiled Headers
-*.gch
-*.pch
-
-# Libraries
-*.lib
-*.a
-*.la
-*.lo
-*.def
-*.exp
-
-# Shared objects (inc. Windows DLLs)
-*.dll
-*.so
-*.so.*
-*.dylib
-
-# Executables
-*.exe
-*.out
-*.app
-*.i*86
-*.x86_64
-*.hex
-
+local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/xHeptc/Kavo-UI-Library/main/source.lua"))()
+local Window = Library.CreateLib("Cat Hub", "Ocean")
+ 
+local Main = Window:NewTab("All")
+local MainSection = Main:NewSection("Get Cats")
+ 
+MainSection:NewButton("Get all cats", "Teleports you to all the cats and get it", function() 
+ 
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = workspace.Maps.StartMap.Collection.Ktty1["Head"].CFrame * CFrame.new(0,3,0)
+wait(.5)
+fireproximityprompt(game:GetService("Workspace").Maps.StartMap.Collection.Ktty1.ProximityPrompt, 10)
+ 
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = workspace.Maps.StartMap.Collection.Ktty2["Head"].CFrame * CFrame.new(0,3,0)
+wait(.5)
+fireproximityprompt(game:GetService("Workspace").Maps.StartMap.Collection.Ktty2.ProximityPrompt, 10)
+ 
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = workspace.Maps.StartMap.Collection.Ktty3["Head"].CFrame * CFrame.new(0,3,0)
+wait(.5)
+fireproximityprompt(game:GetService("Workspace").Maps.StartMap.Collection.Ktty3.ProximityPrompt, 10)
+ 
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = workspace.Maps.StartMap.Collection.Ktty4["Head"].CFrame * CFrame.new(0,3,0)
+wait(.5)
+fireproximityprompt(game:GetService("Workspace").Maps.StartMap.Collection.Ktty4.ProximityPrompt, 10)
+ 
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = workspace.Maps.StartMap.Collection.Ktty5["Head"].CFrame * CFrame.new(0,3,0)
+wait(.5)
+fireproximityprompt(game:GetService("Workspace").Maps.StartMap.Collection.Ktty5.ProximityPrompt, 10)
+ 
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = workspace.Maps.StartMap.Collection.Ktty6["Head"].CFrame * CFrame.new(0,3,0)
+wait(.5)
+fireproximityprompt(game:GetService("Workspace").Maps.StartMap.Collection.Ktty6.ProximityPrompt, 10)
+ 
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = workspace.Maps.StartMap.Collection.Ktty7["Head"].CFrame * CFrame.new(0,3,0)
+wait(.5)
+fireproximityprompt(game:GetService("Workspace").Maps.StartMap.Collection.Ktty7.ProximityPrompt, 10)
+wait(.5)
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = workspace.Maps.StartMap["SpawnLocation"].CFrame * CFrame.new(0,5,0)
+ 
+ 
+end)
+ 
+MainSection:NewButton("Get the 1 cat", "Teleports you to the first cat and get it", function() 
+    game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = workspace.Maps.StartMap.Collection.Ktty1["Head"].CFrame * CFrame.new(0,3,0)
+    wait(.5)
+    fireproximityprompt(game:GetService("Workspace").Maps.StartMap.Collection.Ktty1.ProximityPrompt, 10)
+    wait(.5)
+    game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = workspace.Maps.StartMap["SpawnLocation"].CFrame * CFrame.new(0,5,0)
+end)
+ 
+MainSection:NewButton("Get the 2 cat", "Teleports you to the second cat and get it", function() 
+    game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = workspace.Maps.StartMap.Collection.Ktty2["Head"].CFrame * CFrame.new(0,3,0)
+    wait(.5)
+    fireproximityprompt(game:GetService("Workspace").Maps.StartMap.Collection.Ktty2.ProximityPrompt, 10)
+    wait(.5)
+    game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = workspace.Maps.StartMap["SpawnLocation"].CFrame * CFrame.new(0,5,0)
+end)
+ 
+MainSection:NewButton("Get the 3 cat", "Teleports you to the three cat and get it", function() 
+    game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = workspace.Maps.StartMap.Collection.Ktty3["Head"].CFrame * CFrame.new(0,3,0)
+    wait(.5)
+    fireproximityprompt(game:GetService("Workspace").Maps.StartMap.Collection.Ktty3.ProximityPrompt, 10)
+    wait(.5)
+    game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = workspace.Maps.StartMap["SpawnLocation"].CFrame * CFrame.new(0,5,0)
+end)
+ 
+MainSection:NewButton("Get the 4 cat", "Teleports you to the four cat and get it", function() 
+    game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = workspace.Maps.StartMap.Collection.Ktty4["Head"].CFrame * CFrame.new(0,3,0)
+    wait(.5)
+    fireproximityprompt(game:GetService("Workspace").Maps.StartMap.Collection.Ktty4.ProximityPrompt, 10)
+    wait(.5)
+    game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = workspace.Maps.StartMap["SpawnLocation"].CFrame * CFrame.new(0,5,0)
+end)
+ 
+MainSection:NewButton("Get the 5 cat", "Teleports you to the five cat and get it", function() 
+    game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = workspace.Maps.StartMap.Collection.Ktty5["Head"].CFrame * CFrame.new(0,3,0)
+    wait(.5)
+    fireproximityprompt(game:GetService("Workspace").Maps.StartMap.Collection.Ktty5.ProximityPrompt, 10)
+    wait(.5)
+    game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = workspace.Maps.StartMap["SpawnLocation"].CFrame * CFrame.new(0,5,0)
+end)
+ 
+MainSection:NewButton("Get the 6 cat", "Teleports you to the six cat and get it", function() 
+    game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = workspace.Maps.StartMap.Collection.Ktty6["Head"].CFrame * CFrame.new(0,3,0)
+    wait(.5)
+    fireproximityprompt(game:GetService("Workspace").Maps.StartMap.Collection.Ktty6.ProximityPrompt, 10)
+    wait(.5)
+    game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = workspace.Maps.StartMap["SpawnLocation"].CFrame * CFrame.new(0,5,0)
+end)
+ 
+MainSection:NewButton("Get the 7 cat", "Teleports you to the seven cat and get it", function() 
+    game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = workspace.Maps.StartMap.Collection.Ktty7["Head"].CFrame * CFrame.new(0,3,0)
+    wait(.5)
+    fireproximityprompt(game:GetService("Workspace").Maps.StartMap.Collection.Ktty7.ProximityPrompt, 10)
+    wait(.5)
+    game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = workspace.Maps.StartMap["SpawnLocation"].CFrame * CFrame.new(0,5,0)
+end)
